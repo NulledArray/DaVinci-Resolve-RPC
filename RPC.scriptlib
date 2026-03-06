@@ -1,0 +1,6 @@
+local result = os.execute('"C:\\ProgramData\\Blackmagic Design\\DaVinci Resolve\\Fusion\\Scripts\\Utility\\Main.py"')
+if result == 0 then
+    print("Python script executed successfully")
+else
+    print("Failed to execute Python script. Error code: " .. result)
+end
