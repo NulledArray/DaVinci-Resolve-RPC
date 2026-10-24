@@ -4,29 +4,52 @@ Display your DaVinci Resolve editing activity on Discord with rich presence inte
 
 ## Overview
 
-[Modded by NulledArray]
-This is a Modified version of the original DaVinci Resolve Discord RPC project, designed to provide real-time updates of your video editing work on Discord.
-The Original Main.py doesn't actually work on Linux, so this version has been modified to fix the issues and provide a 
+<h2><strong>Modded by NulledArray.</strong></h2>
+---
+
+<p>
+This is a Modified version of the original DaVinci Resolve Discord RPC project, designed to provide real-time 
+updates of your video editing work on Discord. </p>
+
+<p>
+The Original Main.py doesn't actually work on Linux, so this version has been modified to fix the issues and 
+provide a 
 seamless experience.
+</p>
+<p>
 Don't forget to update the Client ID in `Main.py` before using autostart functionality.
+</p>
 
+<p>
 This version works both in the Linux Terminal and the Python Scripting Engine of DaVinci Resolve.
+</p>
 
+<p>
 The Linux Path for the DaVinci Resolve Scripting API is usually now: 
 $HOME/.local/share/DaVinciResolve/Fusion/Scripts/Utility
+</p>
 
+<p>
 Place both files into that Folder, then run Davinci Resolve, Next click on "Workspace" and then "Scripts" and then 
 "Main".
+</p>
 
+<p>
 The DiscordRPC will also now Flush and clear the status when you close DaVinci Resolve, so you don't have to worry about it being stuck in your Discord status.
+</p>
 
 ---
 
+<h4>Linux Users:</h4>
+<p>
+<strong>
 Don't forget to add these lines to your .bashrc or .profile
 # DaVinci Resolve Python Scripting API
 export RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
 export RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
 export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
+</strong>
+</p>
 
 ---
 
