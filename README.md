@@ -4,6 +4,32 @@ Display your DaVinci Resolve editing activity on Discord with rich presence inte
 
 ## Overview
 
+[Modded by NulledArray]
+This is a Modified version of the original DaVinci Resolve Discord RPC project, designed to provide real-time updates of your video editing work on Discord.
+The Original Main.py doesn't actually work on Linux, so this version has been modified to fix the issues and provide a 
+seamless experience.
+Don't forget to update the Client ID in `Main.py` before using autostart functionality.
+
+This version works both in the Linux Terminal and the Python Scripting Engine of DaVinci Resolve.
+
+The Linux Path for the DaVinci Resolve Scripting API is usually now: 
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Utility
+
+Place both files into that Folder, then run Davinci Resolve, Next click on "Workspace" and then "Scripts" and then 
+"Main".
+
+The DiscordRPC will also now Flush and clear the status when you close DaVinci Resolve, so you don't have to worry about it being stuck in your Discord status.
+
+---
+
+Don't forget to add these lines to your .bashrc or .profile
+# DaVinci Resolve Python Scripting API
+export RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
+export RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
+export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
+
+---
+
 This project enables Discord Rich Presence (RPC) integration with DaVinci Resolve, allowing you to showcase your video editing work as your Discord status. It uses the DaVinci Resolve Python scripting API to fetch project information and displays it on your Discord profile in real-time.
 
 ## Features
