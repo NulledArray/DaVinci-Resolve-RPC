@@ -60,6 +60,8 @@ export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
 </strong>
 </p>
 
+<p> Hope this helps! :) </p>
+
 ---
 
 This project enables Discord Rich Presence (RPC) integration with DaVinci Resolve, allowing you to showcase your video editing work as your Discord status. It uses the DaVinci Resolve Python scripting API to fetch project information and displays it on your Discord profile in real-time.
