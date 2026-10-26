@@ -43,21 +43,14 @@ The DiscordRPC will also now Flush and clear the status when you close DaVinci R
 <h4>Linux Users:</h4>
 <p>
 <strong>
-Don't forget to add these lines to your .bashrc or .profile
----
-<p>
-# DaVinci Resolve Python Scripting API
-</p>
-<p>
-export RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
-</p>
-<p>
-export RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
-</p>
-<p>
-export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
-</p>
+Don't forget to add these lines to your .bashrc or .profile <br>
+--- <br>
 </strong>
+<p>
+# DaVinci Resolve Python Scripting API <br>
+export RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting" <br>
+export RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so" <br>
+export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
 </p>
 
 <p> Hope this helps! :) </p>
